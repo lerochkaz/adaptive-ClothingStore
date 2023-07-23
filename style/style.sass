@@ -1,0 +1,35 @@
+*
+    margin: 0
+    padding: 0
+    border: 0
+
+@import vars
+@import mixins
+@import header
+@import index
+@import media
+
+// Задан стиль для прилипания футера к низу страницы    
+html, body
+    height: 100%
+
+.content-flex
+    display: flex
+    flex-direction: column
+    height: 100%
+
+.content-all
+    flex: 1 0 auto
+
+.content-footer
+    flex: 0 0 auto
+    height: 100px
+    background-color: #cccccc
+
+.container-big
+    max-width: $site-width-big
+    margin: 0 auto
+
+.container-mini
+    max-width: $site-width-small
+    margin: 0 auto

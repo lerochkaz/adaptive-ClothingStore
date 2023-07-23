@@ -1,0 +1,183 @@
+.banner-box
+    max-height: $banner-height-big
+    background-color: $color-bg-banner
+
+.banner-flex
+    display: flex
+    justify-content: left
+    align-items: center
+
+.banner-img
+    max-width: 50%
+
+.banner
+    margin-top: -5%
+    margin-left: 3%
+    display: flex
+    align-items: center
+
+.banner-text
+    &_top
+        @include txt(900, 48px, 58px, $color-text-dark)
+        white-space: nowrap
+
+    &_buttom
+        @include txt(700, 32px, 38px, $color-text-dark)
+        white-space: nowrap
+
+    &_pink
+        color: $color-text-pink
+
+.banner-element
+    height: 92px
+    width: 12px
+    background-color: $color-text-pink
+    margin-right: 15px
+
+.section-padding
+    padding: 5% 1% 7% 1%
+
+.section-grid
+    display: grid
+    grid-template-rows: 1fr 0.74fr
+    grid-template-columns: repeat(3, 1fr)
+    row-gap: 4%
+    column-gap: 2%
+
+.section-item
+    &__unite
+        grid-column: 1/4
+
+.section-link
+    display: flex
+    position: relative
+    justify-content: center
+    align-items: center
+
+.section-link-text
+    @include txt(400, 16px, 19px, $color-text-white)
+    white-space: nowrap
+
+    &__position
+        position: absolute
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &_pink
+        @include txt(700, 24px, 29px, $color-text-pink)
+
+.section-img
+    max-width: 100%
+
+.items-padding
+    padding: 0 2%
+
+.items-header
+    @include txt(400, 30px, 36px, $color-text-dark)
+    text-align: center
+    white-space: nowrap
+
+.items-paragraph
+    @include txt(400, 14px, 17px, $color-text-items-grey)
+    text-align: center
+    white-space: nowrap
+    padding: 1% 0 4% 0
+
+.items-grid
+    display: grid
+    grid-template-rows: repeat(2, 580px)
+    grid-template-columns: repeat(3, 1fr)
+    row-gap: 20px
+    column-gap: 2%
+
+.item
+    background-color: $color-bg-item
+    position: relative
+    display: flex
+    justify-content: center
+
+.item-link
+    display: flex
+    flex-direction: column
+    text-decoration: none
+
+.item-picture
+    max-width: 100%
+
+.item-text-flex
+    display: flex
+    flex-direction: column
+    padding: 8% 4% 7% 4%
+
+.item-title
+    @include txt(400, 13px, 16px, $color-text-black)
+
+.item-value
+    @include txt(300, 14px, 17px, $color-text-items-taupe)
+    margin-top: 3%
+
+.item-price
+    @include txt(400, 16px, 19px, $color-text-pink)
+    margin-top: 5%
+
+.add-box
+    position: absolute
+    border: 1px solid $color-text-white
+    display: none
+    justify-content: center
+    bottom: 64%
+    width: 138px
+    height: 43px
+
+.add-link
+    text-decoration: none
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+
+.add-basket
+    max-width: 26px
+    padding-right: 8%
+
+.add-link-text
+    @include txt(400, 14px, 17px, $color-text-white)
+    white-space: nowrap
+
+.item:hover
+    box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.15)
+    .item-picture
+        filter: brightness(30%)
+    .add-box
+        display: flex
+        box-shadow: 0px 5px 8px 0px rgba(254, 254, 254, 0.15)
+    .add-box:hover
+        box-shadow: 0px 5px 8px 0px rgba(254, 254, 254, 0.30)
+
+.item-button
+    border: 1px solid $color-btn-pink
+    box-sizing: border-box
+    max-width: 210px
+
+.item-link-btn
+    text-decoration: none
+
+.item-text-btn
+    @include txt(400, 16px, 20px, $color-btn-pink)
+    white-space: nowrap
+    text-align: center
+    padding: 14px 38px
+    // padding: 10% 20%
+
+.item-button:hover
+    background-color: $color-btn-pink
+    .item-text-btn
+        color: $color-text-white
+
+.item-flex-btn
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-top: 5%
+    

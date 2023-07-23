@@ -1,0 +1,73 @@
+@media (max-width: $screen-small-size)
+    .nav-disappear
+        display: none
+
+@media (min-width: $screen-small-size) and (max-width: $screen-change-fonts)
+    .banner-text
+        &_top
+            @include txt-size-height(44px, 53px)
+        &_buttom
+            @include txt-size-height(24px, 29px)
+    .banner
+        margin-left: 0
+
+@media (max-width: $screen-small-size)
+    .banner-text
+        &_top
+            @include txt-size-height(38px, 48px)
+        &_buttom
+            @include txt-size-height(20px, 24px)
+
+    .section-padding
+        padding: 15% 1% 15% 1%
+
+    .section-grid
+        display: grid
+        grid-template-rows: 1fr 1fr 1fr 0.68fr
+        grid-template-columns: repeat(3, 1fr)
+        row-gap: 2%
+        column-gap: 0
+
+    .section-item
+        grid-column: 1/4
+        &__unite
+            grid-column: 1/4
+
+    .section-item__unite .section-img
+        content: url("../image/picture5.jpg")
+
+    .items-grid
+        grid-template-rows: repeat(6, 1fr)
+        grid-template-columns: repeat(1, 1fr)
+        justify-items: tretch
+        row-gap: 1%
+        column-gap: 2%
+
+    .items-header
+        font-size: 28px
+
+    .items-paragraph
+        font-size: 12px
+        padding: 1% 0 15% 0
+
+@media (min-width: $screen-small-size) and (max-width: 640px)
+    .section-link-text
+        @include txt-size-height(12px, 14px)
+        &_pink
+            @include txt-size-height(16px, 20px)
+
+@media (max-width: 640px)
+    .banner-img
+        display: none
+    .banner-flex
+        justify-content: center
+        align-items: center
+    .banner
+        margin-left: 0
+        min-height: $banner-height-small
+
+@media (min-width: $screen-small-size) and (max-width: $screen-middle-size)
+    .items-grid
+        grid-template-rows: repeat(3, 1fr)
+        grid-template-columns: repeat(2, 1fr)
+        justify-items: stretch
