@@ -40,7 +40,7 @@
 }
 
 .banner-img {
-  max-width: 50%;
+  max-width: 47%;
 }
 
 .banner {
@@ -160,7 +160,7 @@
 
 .items-grid {
   display: grid;
-  grid-template-rows: repeat(2, 580px);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
   row-gap: 20px;
   -moz-column-gap: 2%;
@@ -254,9 +254,11 @@
 
 .item:hover {
   box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
 }
 .item:hover .item-picture {
   filter: brightness(30%);
+  transition: all 0.3s;
 }
 .item:hover .add-box {
   display: flex;
@@ -267,9 +269,10 @@
 }
 
 .item-button {
-  border: 1px solid #FF6A6A;
+  border: 1px solid #E05C6E;
   box-sizing: border-box;
   max-width: 210px;
+  transition: all 0.3s;
 }
 
 .item-link-btn {
@@ -282,14 +285,14 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #FF6A6A;
+  color: #E05C6E;
   white-space: nowrap;
   text-align: center;
   padding: 14px 38px;
 }
 
 .item-button:hover {
-  background-color: #FF6A6A;
+  background-color: #E05C6E;
 }
 .item-button:hover .item-text-btn {
   color: #FFFFFF;
@@ -300,6 +303,218 @@
   justify-content: center;
   align-items: center;
   padding-top: 5%;
+}
+
+.advantages {
+  margin-top: 4%;
+  background-color: #222224;
+}
+
+.adv-flex {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
+  padding: 5%;
+}
+
+.adv-box {
+  max-width: 360px;
+  height: 133px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adv-img {
+  max-width: 50px;
+}
+
+.adv-heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FBFBFB;
+  text-align: center;
+}
+
+.adv-text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FBFBFB;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-background {
+  background-image: url("../image/background.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  align-self: center;
+  width: 100%;
+}
+
+.footer-top-flex {
+  height: 448px;
+  max-width: 1600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.figure-flex {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  justify-content: center;
+}
+
+.figure-img {
+  height: 96px;
+  padding-bottom: 30px;
+}
+
+.figure-blockquote {
+  text-align: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #222224;
+}
+
+.figure-blockquote-italic {
+  font-style: italic;
+}
+
+.subscription-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subscription-h2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: #222224;
+  text-align: center;
+}
+
+.subscription-h3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #222224;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.subscription-form {
+  height: 49px;
+  display: flex;
+  max-width: 350px;
+}
+
+.input-mail {
+  border-radius: 50px 0 0 50px;
+  width: 65%;
+  padding: 0 15px;
+  border: 1px solid transarent;
+}
+
+.input-mail:focus {
+  outline: 1px solid #9F9F9F;
+}
+
+.button-subscribe {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+  background-color: #E05C6E;
+  border-radius: 0 50px 50px 0;
+  padding: 0 25px;
+  max-width: 35%;
+  transition: all 0.3s;
+}
+
+.button-subscribe:hover {
+  background-color: #FBFBFB;
+  color: #E05C6E;
+  border: solid 1px #E05C6E;
+}
+
+.footer-bottom {
+  background-color: #222224;
+  height: 79px;
+}
+
+.container-min {
+  max-width: 1140px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.bottom-flex {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-copyright {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
+}
+
+.media-box {
+  display: flex;
+  gap: 7px;
+  align-content: center;
+}
+
+.media-link {
+  height: 32px;
+  width: 32px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+}
+
+.media-link:hover {
+  background-color: #F16D7F;
+}
+
+.media-link:hover path {
+  fill: #FFFFFF;
 }
 
 @media (max-width: 376px) {
@@ -353,7 +568,6 @@
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(1, 1fr);
     justify-items: tretch;
-    row-gap: 1%;
     -moz-column-gap: 2%;
          column-gap: 2%;
   }
@@ -395,6 +609,60 @@
     justify-items: stretch;
   }
 }
+@media (max-width: 1163px) {
+  .adv-flex {
+    padding: 10% 2%;
+    gap: 3%;
+  }
+}
+@media (max-width: 1163px) and (min-width: 376px) {
+  .advantages {
+    margin-top: 8%;
+  }
+}
+@media (max-width: 376px) {
+  .advantages {
+    margin-top: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .adv-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  .footer-top-flex {
+    flex-direction: column;
+    min-height: 448px;
+    padding-top: 64px;
+    padding-bottom: 140px;
+  }
+  .footer-background {
+    height: 100%;
+    background-size: cover;
+  }
+  .figure-blockquote {
+    font-size: 18px;
+  }
+  .subscription-h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .subscription-h3 {
+    font-size: 14px;
+    line-height: 36px;
+  }
+  .footer-bottom {
+    height: 143px;
+  }
+  .bottom-flex {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  .media-box {
+    padding-top: 4%;
+  }
+}
 html, body {
   height: 100%;
 }
@@ -403,16 +671,6 @@ html, body {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-
-.content-all {
-  flex: 1 0 auto;
-}
-
-.content-footer {
-  flex: 0 0 auto;
-  height: 100px;
-  background-color: #cccccc;
 }
 
 .container-big {

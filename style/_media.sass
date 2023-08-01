@@ -40,7 +40,6 @@
         grid-template-rows: repeat(6, 1fr)
         grid-template-columns: repeat(1, 1fr)
         justify-items: tretch
-        row-gap: 1%
         column-gap: 2%
 
     .items-header
@@ -71,3 +70,46 @@
         grid-template-rows: repeat(3, 1fr)
         grid-template-columns: repeat(2, 1fr)
         justify-items: stretch
+
+@media (max-width: $site-width-small)  
+    .adv-flex
+        padding: 10% 2%   
+        gap: 3% 
+
+@media (max-width: $site-width-small) and (min-width: $screen-small-size)
+    .advantages
+        margin-top: 8%
+    
+@media (max-width: $screen-small-size)  
+    .advantages
+        margin-top: 30% 
+
+@media (max-width: $screen-middle-size)
+    .adv-flex
+        flex-wrap: wrap
+        justify-content: center
+        gap: 50px
+    .footer-top-flex 
+        flex-direction: column
+        min-height: $height-footer-min-img 
+        padding-top: 64px
+        padding-bottom: 140px    
+    .footer-background
+        height: 100%
+        background-size: cover
+    .figure-blockquote
+        font-size: 18px
+    .subscription-h2
+        font-size: 24px
+        line-height: 36px
+    .subscription-h3
+        font-size: 14px
+        line-height: 36px
+    .footer-bottom
+        height: $height-footer-min
+    .bottom-flex
+        flex-direction: column-reverse
+        justify-content: space-around
+    .media-box
+        padding-top: 4%
+    

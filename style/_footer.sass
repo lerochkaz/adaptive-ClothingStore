@@ -1,0 +1,117 @@
+.footer
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.footer-background
+    background-image: url("../image/background.svg")
+    background-position: left
+    background-repeat: no-repeat
+    max-width: $site-width-big
+    align-self: center
+    width: 100%
+
+
+.footer-top-flex
+    height: $height-footer-min-img 
+    max-width: $site-width-big
+    width: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    
+.figure-flex
+    display: flex
+    flex-direction: column
+    max-width: $width-one-third
+    justify-content: center
+  
+.figure-img
+    height: 96px
+    padding-bottom: 30px
+
+.figure-blockquote
+    text-align: center
+    @include txt(400, 20px, 25px, $color-bg-adv)
+
+.figure-blockquote-italic
+    font-style: italic
+
+.subscription-box
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.subscription-h2
+    @include txt(700, 24px, 40px, $color-bg-adv)
+    text-align: center
+
+.subscription-h3
+    @include txt(700, 18px, 40px, $color-bg-adv)
+    text-align: center
+    padding-bottom: 30px
+
+.subscription-form
+    height: 49px
+    display: flex 
+    max-width: 350px
+
+.input-mail
+    border-radius: 50px 0 0 50px
+    width: 65%
+    padding: 0 15px
+    border: 1px solid transarent
+
+.input-mail:focus
+    outline: 1px solid $color-text-items-grey
+
+.button-subscribe 
+    @include txt(400, 14px, 14px, $color-text-white)
+    background-color: $color-btn-pink
+    border-radius: 0 50px 50px 0
+    padding: 0 25px 
+    max-width: 35%
+    transition: all 0.3s
+
+.button-subscribe:hover
+    background-color: $color-text-adv
+    color: $color-btn-pink
+    border: solid 1px $color-btn-pink
+
+.footer-bottom
+    background-color: $color-bg-footer
+    height: $height-footer
+
+.container-min
+    max-width: calc($site-width-big - 230px - 230px)
+    height: 100%
+    margin: 0 auto
+
+.bottom-flex
+    width: 94%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    
+.text-copyright
+    @include txt(400, 16px, 19px, $color-text-adv)
+
+.media-box
+    display: flex
+    gap: 7px
+    align-content: center
+
+.media-link
+    height: 32px
+    width: 32px
+    background-color: $color-text-white
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: all 0.4s
+
+.media-link:hover
+    background-color: $color-icon-pink
+
+.media-link:hover path   
+    fill: $color-text-white
