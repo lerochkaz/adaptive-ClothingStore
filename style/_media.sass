@@ -112,4 +112,33 @@
         justify-content: space-around
     .media-box
         padding-top: 4%
+    .show__model
+        min-width: 374px
+    .description__price
+        width: 85%
+        padding-bottom: 40px
+    .items-grid-product
+        grid-template-rows: repeat(1, 1fr)
+        grid-template-columns: repeat(2, 1fr)
+    .item-product:nth-of-type(3)
+        @include hide
+
+@media (max-width: $screen-sm-size)
+    .section__box
+        flex-direction: column
+        justify-content: space-around
+    .description__price
+        width: 50%
+    .description__details
+        @include txt(400, 10px, 12px, $color-description-details)
+
+@media (max-width: $screen-small-size)
+    .item-product:nth-of-type(2)
+        @include hide
+    .item-product:nth-of-type(3)
+        display: flex
+        z-index: 1
+    .items-grid-product
+        grid-template-rows: repeat(2, 1fr)
+        grid-template-columns: repeat(1, 1fr)
     
