@@ -9,3 +9,24 @@
 @mixin txt-size-height($fs, $lh)
     font-size: $fs
     line-height: $lh
+
+@mixin content-center
+    margin: 0 auto
+
+@mixin flex-between
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+@mixin flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin flex-column
+    display: flex
+    flex-direction: column
+    
+@mixin hide
+    display: none
+    z-index: -100
