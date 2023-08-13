@@ -122,6 +122,11 @@
         grid-template-columns: repeat(2, 1fr)
     .item-product:nth-of-type(3)
         @include hide
+    .items__grid-catalog
+        grid-template-rows: repeat(4, 1fr)
+        grid-template-columns: repeat(2, 1fr)
+    .items__grid-catalog .item:last-child
+        @include hide
 
 @media (max-width: $screen-sm-size)
     .section__box
@@ -131,6 +136,9 @@
         width: 50%
     .description__details
         @include txt(400, 10px, 12px, $color-description-details)
+    .items__grid-catalog
+        grid-template-rows: repeat(8, 1fr)
+        grid-template-columns: repeat(1, 1fr)
 
 @media (max-width: $screen-small-size)
     .item-product:nth-of-type(2)
@@ -142,3 +150,16 @@
         grid-template-rows: repeat(2, 1fr)
         grid-template-columns: repeat(1, 1fr)
     
+@media (max-width: $screen-change-catalog)
+    .filter
+        max-width: 17vw
+    .filter__relative
+        max-width: 17vw
+    .filter__span
+        display: none
+    .filter__svg
+        width: 37px
+        height: 25px
+    .choice__relative
+        max-width: 83vw
+        right: 0px
