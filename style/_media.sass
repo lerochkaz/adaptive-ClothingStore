@@ -163,3 +163,47 @@
     .choice__relative
         max-width: 83vw
         right: 0px
+
+@media ( max-width: 1190px )
+    .main_flex
+        gap: 50px
+
+@media ( max-width: 1104px )
+    .main_flex
+       flex-direction: column
+       min-height: 777px
+    .main__content_right
+        flex-direction: row
+        gap: 16px
+    .cart_group-button
+        justify-content: center
+        gap: 48px
+    .total
+       margin: 45px 0
+
+
+@media ( max-width: 750px )
+    .main__content_right
+        flex-direction: column
+    .cart__text
+       @include txt-size-height(14px, 25px) 
+    .cart__text-head
+        @include txt-size-height(16px, 25px)
+    .cart__text_padding 
+        padding: 14px 30px 20px 14px
+    .cart__img
+        max-width: 150px
+    .cart__text-head 
+        padding-bottom: 14px
+    .cart_flex
+        justify-content: space-between
+
+@media ( max-width: 475px )
+    .cart__text_padding 
+        padding: 0 5px
+    .cart__close 
+        padding: 15px 10px 0 0
+    .cart_group-button
+        flex-direction: column
+    .cart__button
+        @include txt-size-height(12px, 14px)
