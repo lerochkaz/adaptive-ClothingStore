@@ -1,0 +1,70 @@
+.registration
+    @include content-center
+    max-width: $site-width
+    padding: 0 2%
+    &_flex
+        @include flex-between
+        align-items: flex-start
+        gap: 128px
+        padding: 64px 0 96px 0
+    &__form
+        width: $width-one-third
+        box-sizing: border-box
+        @include flex-column
+        gap: 31px
+        padding-bottom: 39px
+        &-data
+            @include flex-column
+            gap: 20px
+            &_flex
+                flex-direction: row
+        &-legend
+            @include txt(300, 16px, 19px, $color-bg-header)
+            padding-bottom: 20px
+        &-input
+            @include txt(300, 13px, 16px, $color-registration-text)
+            height: 45px
+            box-sizing: border-box
+            display: block
+            align-content: center
+            padding: 0 16px
+            border: 1px solid $color-registration-text
+        &-radio
+            @include txt(300, 13px, 16px, $color-registration-text)
+        &__text
+            @include txt(300, 13px, 16px, $color-registration-text)
+    &__text
+        @include txt(300, 13px, 16px, $color-registration-text)
+    &__button
+        @include txt(400, 14px, 17px, $color-text-white)
+        border: 1px solid transparent
+        background-color: $color-text-pink
+        box-sizing: border-box
+        display: block
+        padding: 16px 29px
+        transition: all 0.3s
+        &:hover
+            background-color: $color-text-white
+            color: $color-text-pink
+            border-color: $color-text-pink
+    &__perks
+        box-sizing: border-box
+        @include flex-column
+        &_flex
+            @include flex-column
+            gap: 22px
+        &-header
+            @include txt(300, 24px, 29px, $color-text-black)
+        &-text
+            @include txt(300, 24px, 29px, $color-text-black)
+        &__list
+            @include txt(300, 24px, 29px, $color-text-black)
+            list-style-type: none
+            padding-bottom: 16px
+            &-el
+                padding-bottom: 16px
+                &::before
+                    content: url("/image/registration-list.svg")
+                    padding-right: 22px
+                
+            

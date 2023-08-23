@@ -1,0 +1,121 @@
+.main
+    padding: 96px 2% 128px 2%
+    &_box
+        @include content-center
+        max-width: $site-width
+    &_flex
+        @include flex-between
+        gap: 128px
+    &__content
+        &_left
+            @include flex-column
+            justify-content: center
+            gap: 40px
+        &_right
+            @include flex-column
+            justify-content: flex-start
+            gap: 50px
+
+
+.cart
+    -webkit-box-shadow: 7px 7px 35px -1px rgba(0, 0, 0, 0.2)
+    -moz-box-shadow: 7px 7px 35px -1px rgba(0, 0, 0, 0.2)
+    box-shadow: 7px 7px 35px -1px rgba(0, 0, 0, 0.2)
+    &_flex
+        display: flex
+    &__img
+        max-width: 262px
+        height: 100%
+    &__close
+        padding: 28px 22px 0 0
+    &__text
+        @include txt(400, 22px, 34px, $color-cart-text)
+        &-price-pink
+            color: $color-text-pink
+        &-head
+            @include txt(400, 24px, 29px, $color-bg-header)
+            padding-bottom: 42px
+        &__form-text
+            display: inline-block
+            padding-right: 5%
+        &__form-input
+            max-width: 44px
+            border: 1px solid $color-card-border-form
+            color: $color-cart-text
+            border-radius: 2px
+            text-align: center
+            padding: 4px 0
+        &_padding
+            padding: 22px 97px 48px 32px
+    &__button
+        @include style-button-cart
+        padding: 16px 39px
+        transition: all 0.3s
+    &__button:hover
+        @include shadow-botton
+    &_group-button
+        padding-top: 32px
+        @include flex-between
+
+.form-adress
+    width: $width-one-third
+    height: 306px
+    @include flex-column
+    justify-content: center
+    gap: 20px
+    &__header
+        @include txt(300, 16px, 19px, $color-card-button)
+        width: 100%
+    &__input
+        @include style-button-cart
+        width: 100%
+        padding: 15px
+        box-sizing: border-box
+        outline: none
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button 
+            -webkit-appearance: none
+    &__button
+        @include style-button-cart
+        @include txt(300, 11px, 13px, $color-card-button)
+        padding: 10px 15px
+        max-width: 108px
+        transition: all 0.3s
+        &:hover
+            @include shadow-botton
+
+.total
+    max-width: $width-one-third
+    background-color: $color-bg-total
+    padding: 39px 43px 42px
+    margin-bottom: 50%
+    &_flex
+        @include flex-column
+        justify-content: center
+        gap: 17px
+        height: 100%
+    &__top-box
+        border-bottom: 1px solid #E2E2E2
+    &__top-box-sub
+        @include txt(400, 11px, 13px, $color-text-total)
+        padding-bottom: 12px
+        text-align: right
+    &__top-box-grand
+        @include txt(300, 16px, 19px, $color-bg-header)
+        padding-bottom: 21px
+        text-align: right
+    &__top-box-span
+        color: $color-text-pink
+        font-weight: 700
+    &__bottom
+        @include txt(300, 16px, 19px, $color-text-white)
+        background: $color-text-pink
+        border: 1px solid transparent
+        padding: 15px 40px
+        transition: all 0.3s
+        &:hover
+            background: $color-text-white
+            color: $color-text-pink
+            border-color: $color-text-pink
+
+                
