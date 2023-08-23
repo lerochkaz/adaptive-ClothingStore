@@ -458,7 +458,7 @@
   align-items: center;
   flex-direction: column;
   min-height: 600px;
-  width: 100%;
+  width: 97%;
   border: 1px solid #EAEAEA;
   position: absolute;
   top: -45px;
@@ -1103,7 +1103,8 @@
     padding-top: 4%;
   }
   .show__model {
-    min-width: 374px;
+    min-width: 300px;
+    max-width: 98%;
   }
   .description__price {
     width: 85%;
