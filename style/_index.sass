@@ -215,3 +215,47 @@
 .adv-text
     @include txt(300, 14px, 17px, $color-text-adv)
     text-align: center
+
+.nav-element_relative
+    position: relative
+
+.mega-box
+    display: none
+    flex-direction: column
+    box-sizing: border-box
+    width: 232px
+    background-color: $color-text-white
+    gap: 20px
+    position: absolute
+    z-index: 1000
+    padding: 37px 20px 32px 34px
+    @include shadow-botton
+    top: 67px
+
+.mega-item
+    @include flex-column
+    gap: 12px
+
+.box-header
+    @include txt(700, 14px, 17px, $color-text-black)
+
+.item-header
+    @include txt(400, 14px, 17px, $color-text-pink)
+
+.menu-link
+    text-decoration: none
+    @include txt(400, 14px, 17px, $color-description-details)
+    &:hover
+        color: $color-text-pink
+
+#checkbox-label
+    position: absolute
+    visibility: hidden
+    &:checked ~.mega-box
+        display: flex
+
+#checkbox-label ~label > img
+    padding: 16px 18px
+    
+        
+        
